@@ -1,12 +1,5 @@
 <?php
 
-//--------------------------------------------------------------------------------------------------
-// Utilities for our event-fetching scripts.
-//
-// Requires PHP 5.2.0 or higher.
-//--------------------------------------------------------------------------------------------------
-
-// PHP will fatal error if we attempt to use the DateTime class without this being set.
 date_default_timezone_set('UTC');
 
 
@@ -101,10 +94,6 @@ class Event {
   }
 
 }
-
-
-// Date Utilities
-//----------------------------------------------------------------------------------------------
 
 
 // Parses a string into a DateTime object, optionally forced into the given timeZone.

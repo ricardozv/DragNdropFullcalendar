@@ -22,17 +22,17 @@
     });
 
     //// the individual way to do it
-    // var containerEl = document.getElementById('external-events-list');
-    // var eventEls = Array.prototype.slice.call(
-    //   containerEl.querySelectorAll('.fc-event')
-    // );
-    // eventEls.forEach(function(eventEl) {
-    //   new FullCalendar.Draggable(eventEl, {
-    //     eventData: {
-    //       title: eventEl.innerText.trim(),
-    //     }
-    //   });
-    // });
+     var containerEl = document.getElementById('external-events-list');
+     var eventEls = Array.prototype.slice.call(
+       containerEl.querySelectorAll('.fc-event')
+     );
+     eventEls.forEach(function(eventEl) {
+       new FullCalendar.Draggable(eventEl, {
+         eventData: {
+           title: eventEl.innerText.trim(),
+         }
+       });
+     });
 
     /* initialize the calendar
     -----------------------------------------------------------------*/
