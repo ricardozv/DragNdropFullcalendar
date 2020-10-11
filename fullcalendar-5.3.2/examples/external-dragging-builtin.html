@@ -44,10 +44,13 @@
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
-        right: 'timeGridWeek, dayGridMonth,timeGridDay,listWeek'
+        right: 'timeGridWeek, dayGridMonth,timeGridDay,listWeek',
+        
       },
       editable: true,
       droppable: true, 
+      locale:"pt-br",
+      events: 'list_eventos.php',
 
       
       drop: function(arg) {
