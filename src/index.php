@@ -4,6 +4,8 @@
 <meta charset='utf-8' />
 <link href='../ricozv/DragNdropFullcalendar/src/index.php/lib/main.css' rel='stylesheet' />
 <script src='../ricozv/DragNdropFullcalendar/src/index.php/lib/main.js'></script>
+<script src='../lib/locales-all.js'></script>
+<script src='js/core/lacales/pt-br.js'></script>
 <script>
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -34,8 +36,7 @@
        });
      });
 
-    /* initialize the calendar
-    -----------------------------------------------------------------*/
+
 
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -44,6 +45,10 @@
         center: 'title',
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
       },
+
+      events: [{
+
+      }],
       editable: true,
       droppable: true, // this allows things to be dropped onto the calendar
       drop: function(arg) {
