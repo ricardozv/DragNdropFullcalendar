@@ -1,7 +1,10 @@
+// Evento disparado quando o usuário começa a arrastar a seleção.
 const dragStart = target => {
     target.classList.add('dragging');
 };
 
+
+// Evento disparado quando o usuário conclui a operação, e solta a seleção.
 const dragEnd = event => {
     event.currentTarget.classList.remove('dragging');
 };
